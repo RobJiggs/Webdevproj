@@ -1,12 +1,13 @@
 import json
 from datetime import datetime
 from flask import request, Response
-from Backendproj import app, db, Payer, Transaction
+from Backendproj import app,db
+from Backendproj.models import Payer,Transaction
 
 @app.route("/")
 @app.route("/home/")
 def home():
-    return "<h1>Home Page</h1>"
+    return "<h1>Test</h1>"
 
 
 @app.route("/api/user/new_action", methods=['PUT'])
